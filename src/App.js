@@ -37,7 +37,7 @@ const App = () => {
         <MovieListHeading heading="Movies" />
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
-      <div className="row">
+      <div className="row row-no-gutters">
         <MovieList
           movies={movies}
           favouriteComponent={AddFavourites}
