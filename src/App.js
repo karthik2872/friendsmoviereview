@@ -21,6 +21,7 @@ const App = () => {
     const responseJson = await response.json();
 
     if (responseJson.Search) {
+      console.log(responseJson.Search);
       setMovies(responseJson.Search);
     }
   };
