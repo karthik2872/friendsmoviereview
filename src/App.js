@@ -44,16 +44,16 @@ const App = () => {
 
   const addFavouriteMovie = (movie) => {
     const newFavouriteList = [...favourites, movie];
-    setFavourites(newFavouriteList);
-    //saveToLocalStorage(newFavouriteList);
+    //setFavourites(newFavouriteList);
+    saveToLocalStorage(newFavouriteList);
   };
 
   const removeFavouriteMovie = (movie) => {
     const newFavouriteList = favourites.filter(
       (favourite) => favourite.imdbID !== movie.imdbID
     );
-    setFavourites(newFavouriteList);
-    //saveToLocalStorage(newFavouriteList);
+    //setFavourites(newFavouriteList);
+    saveToLocalStorage(newFavouriteList);
   };
   console.log({ movies });
   return (
